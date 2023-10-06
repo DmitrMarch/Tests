@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Амогус</title>
+    <style>
+        @keyframes textShine {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-family: Arial;
+            font-size: 100px;
+            background: linear-gradient(
+            to right,
+            tomato 20%,
+            yellow 30%,
+            green 70%,
+            #764ada 80%
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -text-fill-color: transparent;
+            background-size: 500% auto;
+            animation: textShine 3s ease-in-out infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <p>Просто текст</p>
+    </div>
+</body>
+</html>
